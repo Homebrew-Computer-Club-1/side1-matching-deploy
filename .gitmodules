@@ -1,0 +1,6 @@
+[submodule "side1-matching-fe"]
+	path = side1-matching-fe
+	url = https://github.com/Homebrew-Computer-Club-1/side1-matching-fe.git
+[submodule "side1-matching-be"]
+	path = side1-matching-be
+	url = https://github.com/Homebrew-Computer-Club-1/side1-matching-be.git

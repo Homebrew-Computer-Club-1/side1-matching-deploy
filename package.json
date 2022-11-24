@@ -1,0 +1,14 @@
+{
+  "name": "side1_matching_",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "client-build" : "cd side1-matching-fe && npm ci && npm run build && mv build build_fe && cd ../ ",
+    "server-build" : "cd side1-matching-be && npm ci --dev && npm run build && mv build build_be && cd ../",
+    "heroku-prebuild" : "npm run client-build && npm run server-build && mv ./side1-matching-fe/build_fe ./side1-matching-be/build_be",
+    "start" : "cd side1-matching-be && node build_be/server.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
